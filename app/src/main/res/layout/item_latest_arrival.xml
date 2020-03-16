@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="6dp"
+    android:elevation="8dp"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgLatestArrival"
+            android:layout_width="100dp"
+            android:layout_height="125dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtLatestArrivalName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:text="Boy\nShirt"
+            app:layout_constraintLeft_toLeftOf="@id/imgLatestArrival"
+            app:layout_constraintTop_toBottomOf="@+id/imgLatestArrival" />
+
+        <TextView
+            android:id="@+id/txtLatestArrivalBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="LOUIS VUITON"
+            android:textSize="13dp"
+            android:textColor="#d8d8d8"
+            app:layout_constraintLeft_toLeftOf="@id/imgLatestArrival"
+            app:layout_constraintTop_toBottomOf="@id/txtLatestArrivalName" />
+
+        <ImageView
+            android:id="@+id/imgRatingStar"
+            android:layout_width="94dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_ratingstars"
+            app:layout_constraintLeft_toLeftOf="@id/imgLatestArrival"
+            app:layout_constraintTop_toBottomOf="@id/txtLatestArrivalBrand" />
+
+        <TextView
+            android:id="@+id/txtKs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" KS"
+            app:layout_constraintBottom_toBottomOf="@id/imgRatingStar"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/txtLatestArrivalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/txtKs"
+            app:layout_constraintTop_toTopOf="@id/txtKs" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
